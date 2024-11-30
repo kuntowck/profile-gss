@@ -1,3 +1,6 @@
+import Image from "next/image"
+import Link from "next/link"
+
 const Navbar = () => {
   const sections = [
     { id: "hero", label: "Home" },
@@ -9,7 +12,9 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 w-full bg-white shadow-md z-50">
       <div className="container mx-auto flex justify-between items-center p-4">
-        <h1 className="text-xl font-bold text-slate-700">Global Smart Solusindo</h1>
+        <div className="">
+          <Image src="/logo.png" width={50} height={50} alt="Logo GSS" />
+        </div>
         <ul className="flex space-x-6">
           {sections.map((section) => (
             <li key={section.id}>
@@ -22,6 +27,7 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
+        <Link href={`#products`} className="text-sm bg-gradient-to-r from-indigo-700 to-sky-500 text-white px-4 py-2 rounded-full">Contact us</Link>
       </div>
     </nav>
   )
