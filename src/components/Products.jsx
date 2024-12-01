@@ -26,14 +26,16 @@ const Products = () => {
       className="h-screen bg-cover bg-center flex flex-col justify-center items-center text-center"
       style={{ backgroundImage: "url('/hero.jpg')" }}
     >
-      <div className="container mx-auto px-4 text-center ">
-        <h2 className="text-3xl font-bold mb-6 text-white">What We Do</h2>
+      <div className="max-w-screen-sm md:max-w-screen-xl mx-auto px-4 text-center ">
+        <h2 className="text-2xl md:text-4xl font-bold mb-8 text-white">What We Do</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {products.map((service, index) => (
-            <div key={index} className="p-6 bg-gray-100 rounded-md shadow-md">
+            <div key={index} className="p-8 bg-gray-100 rounded-md shadow-md max-h-96">
               <div className="text-4xl mb-4">{service.icon}</div>
               <h3 className="text-xl font-bold mb-2">{service.title}</h3>
-              <p className="text-gray-700">{service.description}</p>
+              <p className="text-gray-700 text-justify">
+                {service.description}
+              </p>
             </div>
           ))}
         </div>

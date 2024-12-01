@@ -2,28 +2,33 @@ import Image from "next/image"
 
 const About = () => {
   return (
-    <section id="about" className="py-16 bg-gray-100">
-      <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8 justify-center">
-        <div>
+    <section
+      id="about"
+      className="h-screen flex justify-center items-center bg-slate-100"
+    >
+      <div className="max-w-screen-sm md:max-w-screen-xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="flex justify-center">
           <Image
             src="/about.png"
             alt="about"
-            className=""
-            width={400}
-            height={200}
+            className="object-cover"
+            width={600}
+            height={400}
           />
         </div>
         <div className="">
-          <h3 className="text-lg font-bold mb-3">
+          <h3 className="bg-gradient-to-r from-indigo-700 to-sky-500 bg-clip-text text-transparent text-lg font-bold mb-4">
             What is Global Smart Solusindo?
           </h3>
-          <h1 className="text-3xl font-bold mb-3">
+          <h1 className="text-2xl md:text-4xl font-bold leading-snug mb-8 text-gray-800">
             We focus on comprehensive information technology and network
             services.
           </h1>
-          <p className="text-lg text-gray-700 max-w-3xl mx-auto">
-            For almost 16 years, our company has provided top-quality services
-            to diverse industries.
+          <p className="text-gray-700 text-base md:text-lg leading-relaxed">
+            For almost 16 years, our company has continued to grow thanks to
+            customers trust in the quality of our services. We have successfully
+            served various customer segments, including government agencies,
+            banking, telecommunications, mining, start-ups and other industries.
           </p>
         </div>
       </div>
