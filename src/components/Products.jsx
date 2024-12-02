@@ -26,7 +26,7 @@ const Products = () => {
       className="h-screen bg-cover bg-center flex flex-col justify-center items-center text-center"
       style={{ backgroundImage: "url('/hero.jpg')" }}
     >
-      <div className="max-w-screen-sm md:max-w-screen-xl mx-auto px-4 text-center ">
+      <div className="layout">
         <h2 className="text-2xl md:text-4xl font-bold mb-8 text-white">What We Do</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {products.map((service, index) => (

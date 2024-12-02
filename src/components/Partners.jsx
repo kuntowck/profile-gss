@@ -1,22 +1,39 @@
 import Image from "next/image"
 
 const Partners = () => {
-  const partners = ["bri", "bridgestone", "fujitsu", "pokphand", "trakindo"]
+  const partners = [
+    "bri",
+    "bridgestone",
+    "fujitsu",
+    "pokphand",
+    "trakindo",
+    "bca",
+    "gojek",
+    "toyota",
+    "mandiri-taspen",
+    "jne",
+  ]
   return (
     <section id="partners" className="py-16">
-      <div className="container mx-auto px-4 text-center">
-        <h2 className="text-3xl font-bold mb-6">Partnership with</h2>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+      <div className="layout">
+        <h2 className="bg-gradient-to-r from-indigo-700 to-sky-500 text-transparent bg-clip-text text-2xl md:text-4xl font-bold mb-8 text-center">
+          Partnership with
+        </h2>
+        <div className="grid grid-cols-2 md:grid-cols-4 items-center justify-items-center ">
           {partners.map((partner, index) => (
-            <Image
-              src={`/partners/${partner}.png`}
-              alt={partner}
+            <div
               key={index}
-              width={50}
-              height={50}
-            />
+              className="grayscale hover:grayscale-0 transition duration-300 ease-in-out"
+            >
+              <Image
+                src={`/partners/${partner}.png`}
+                alt={partner}
+                width={100}
+                height={100}
+                className="w-24 h-auto object-contain"
+              />
+            </div>
           ))}
-
         </div>
       </div>
     </section>

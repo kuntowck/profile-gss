@@ -5,7 +5,7 @@ const Hero = () => {
       className="h-screen bg-cover bg-center flex justify-center items-center text-center text-white"
       style={{ backgroundImage: "url('/hero.jpg')" }}
     >
-      <div className="max-w-screen-sm md:max-w-screen-xl mx-auto px-4">
+      <div className="layout">
         <h1 className="text-5xl font-bold mb-4">
           Right Technology Solutions for Your Business
         </h1>

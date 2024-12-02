@@ -6,14 +6,14 @@ const About = () => {
       id="about"
       className="h-screen flex justify-center items-center bg-slate-100"
     >
-      <div className="max-w-screen-sm md:max-w-screen-xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div className="layout grid grid-cols-1 lg:grid-cols-2 gap-4">
         <div className="flex justify-center">
           <Image
             src="/about.png"
             alt="about"
             className="object-cover"
-            width={600}
-            height={400}
+            width={500}
+            height={250}
           />
         </div>
         <div className="">

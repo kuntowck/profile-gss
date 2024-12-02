@@ -37,7 +37,7 @@ const Header = () => {
           : "bg-white shadow-none"
       }`}
     >
-      <div className="max-w-screen-sm md:max-w-screen-xl mx-auto  flex items-center justify-between px-4 py-2">
+      <div className="layout  flex items-center justify-between px-4 py-2">
         <div className="flex-shrink-0 h-16">
           <Link href="/">
             <Image
